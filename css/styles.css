@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
  :root {
 	--blue: #007bff;
 	--indigo: #6610f2;
@@ -179,7 +180,7 @@ h6,
 .h5,
 .h6 {
 	margin-bottom: 0.5rem;
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 }
@@ -230,7 +231,7 @@ h2.section-heading.text-uppercase,
 .sisr,
 .slam,
 .options_titre {
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 .titre {
@@ -335,7 +336,7 @@ h2.section-heading.text-uppercase,
 	border-radius: 15px;
 	padding: 20px;
 	margin-block-end: 20px;
-	height: 35rem;
+	height: 18rem;
 }
 
 .txt_just {
@@ -472,49 +473,6 @@ ul {
 	padding-left: 0.75rem;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.checkbox {
-	opacity: 0;
-	position: absolute;
-}
-
-.checkbox-label {
-	background-color: #111;
-	width: 50px;
-	height: 26px;
-	border-radius: 50px;
-	position: relative;
-	padding: 5px;
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	top: 11rem;
-	left: 90%;
-}
-
-.fa-moon {
-	color: #138496;
-}
-
-.fa-sun {
-	color: #ffc800;
-}
-
-.checkbox-label .ball {
-	background-color: #fff;
-	width: 22px;
-	height: 22px;
-	position: absolute;
-	left: 2px;
-	top: 2px;
-	border-radius: 50%;
-	transition: transform 0.2s linear;
-}
-
-.checkbox:checked+.checkbox-label .ball {
-	transform: translateX(24px);
 }
 
 #row_cv {
@@ -1042,7 +1000,7 @@ a.text-warning:focus {
 
 .text-danger {
 	color: #dc3545 !important;
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 a.text-danger:hover,
@@ -1375,7 +1333,7 @@ header.masthead {
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
 	font-size: 1.5rem;
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -1604,26 +1562,31 @@ header.masthead {
 }
 
 .certif_container {
-	background: #f5e8e8;
-	padding: 40px;
-	margin: 20px;
-	display: flex;
-	justify-content: center;
+	background: #bbc9fb;
+    padding: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	border-radius: 20px;
 }
 
 .certif_container img {
 	width: 25rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
-	max-width: 85%;
-	transition: 0.3s;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 85%;
+    transition: 0.3s;
+    margin: 20px;
+	border-radius: 20px;
 }
 
 .certif_container img:hover {
 	transform: scale(1.3);
 	animation-duration: 0.3s;
-
 }
+
+  
 
 #whitetools {
 	color: white;
@@ -1694,7 +1657,7 @@ section#contact form#contactForm .form-group textarea {
 
 section#contact form#contactForm .form-group input.form-control {
 	height: auto;
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 section#contact form#contactForm .form-group-textarea {
@@ -1716,7 +1679,7 @@ section#contact form#contactForm .form-control:focus {
 }
 
 section#contact form#contactForm ::-webkit-input-placeholder {
-	font-family: 'Baloo Chettan 2', cursive;
+	font-family: 'Hammersmith One', sans-serif;
 	font-weight: 700;
 	color: #ced4da;
 }
@@ -2054,12 +2017,3 @@ section#contact form#contactForm :-ms-input-placeholder {
 	}
 }
 
-
-/* ===== MEDIA QUERIES=====*/
-
-@media screen and (max-width: 768px) {
-	.checkbox-label {
-		margin-bottom: 10rem;
-		margin-left: -20px;
-	}
-}
