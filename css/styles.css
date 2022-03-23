@@ -102,7 +102,7 @@ strong {
 }
 
 a {
-	color: #ffc800;
+	color: #3e2eca;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -280,7 +280,7 @@ h2.section-heading.text-uppercase,
 
 .container_typewriter p span.typed-text {
 	font-weight: normal;
-	color: #ffc800;
+	color: #3e2eca;
 	font-family: 'Hammersmith One', sans-serif;
 	font-weight: bold;
 }
@@ -321,7 +321,8 @@ h2.section-heading.text-uppercase,
 	grid-template-rows: repeat(1, 1fr);
 	grid-column-gap: 35px;
 	grid-row-gap: 0px;
-	margin-top: 60px;
+	margin-top: 60px; 
+	color:whitesmoke ;
 }
 
 .options_titre {
@@ -383,7 +384,7 @@ ul {
   }
   /* Timeline */
   .timeline {
-    border-left: 4px solid #ffc800;	
+    border-left: 4px solid #3e2eca;	
 	border-bottom-right-radius: 4px;
 	border-top-right-radius: 4px;
 	color: rgba(0, 0, 0, 0.8);
@@ -432,7 +433,7 @@ ul {
 	min-width: 120px;
   }
   .timeline .event:after {
-    box-shadow: 0 0 0 4px #ffc800;
+    box-shadow: 0 0 0 4px #3e2eca;
 	left: -57.85px;
     background: #ffcece;
 	border-radius: 50%;
@@ -637,9 +638,10 @@ textarea.form-control {
 .btn-primary {
 	margin-left: 30px;
 	color: #fff;
-	background: linear-gradient(0deg, #ffc8009c 0%, #ffc80048 100%);
-	border-color: #ffc800;
+	background: linear-gradient(0deg, #3e2eca9c 0%, #3e2ecaaf 100%);
+	border-color: #3e2eca;
 	transition: 0.3s;
+	border-radius: 20px;
 }
 
 @keyframes btn-primary {
@@ -650,9 +652,9 @@ textarea.form-control {
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #ffa2a2;
+	background-color: #3e2ecae0;
 	transform: scale(1.2);
-	border-color: #ffa2a2;
+	border-color: #3e2ecae0;
 	animation-duration: 0.3s;
 }
 
@@ -1172,6 +1174,10 @@ p {
 	margin-bottom: 3rem;
 }
 
+.page-section-projets h2.section-heading {
+	color: whitesmoke;
+}
+
 .page-section-presentation {
 	padding: 6rem 0;
 }
@@ -1184,13 +1190,14 @@ p {
 .page-section-projets {
 	padding: 6rem 0;
 	color: #212529;
-	background: #ffdb0117;
+	background: #070142c0;
 }
 
 .page-section-veille {
 	padding: 6rem 0;
 	color: #212529;
 }
+
 
 
 
@@ -1244,12 +1251,12 @@ img::-moz-selection {
 	font-size: 0.75rem;
 	color: #fff;
 	text-transform: uppercase;
-	background-color: #ffc800;
+	background-color: #3e2eca;
 	border: 0;
 }
 
 #mainNav .navbar-brand {
-	color: #ffc800;
+	color: #3e2eca;
 	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 700;
 	letter-spacing: 0.0625em;
@@ -1263,11 +1270,13 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link {
 	color: #fff;
 	letter-spacing: 0.0625em;
+	white-space: nowrap;
 }
+
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-	color: #ffc800;
+	color: #3e2eca;
 }
 
 header.masthead {
@@ -1275,7 +1284,7 @@ header.masthead {
 	padding-bottom: 6rem;
 	text-align: center;
 	color: #fff;
-	background-image: url("../assets/img/header-bg3.jpg");
+	background-image: url("../assets/img/acc1.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -1308,7 +1317,7 @@ header.masthead {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #ffc80096;
+	background: #3e2eca96;
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
@@ -1411,6 +1420,70 @@ header.masthead {
 }
 
 
+#veille .portfolio-item {
+	max-width: 25rem;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.1s;
+    font-weight: 900;
+}
+
+#veille .portfolio-item:hover{
+	transform: scale(1.1);
+	animation-duration: 0.3s;
+}
+
+
+#veille .portfolio-item .portfolio-link {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+#veille .portfolio-item .portfolio-link .portfolio-hover {
+	border-radius: 20px 20px 0px 0px;
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #3e2eca96;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity ease-in-out 0.25s;
+}
+
+#veille .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+	font-size: 1.25rem;
+	color: white;
+}
+
+#veille .portfolio-item .portfolio-link:hover .portfolio-hover {
+	opacity: 1;
+}
+
+#veille .portfolio-item .portfolio-caption {
+	padding: 1.5rem;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 0px 0px 20px 20px;
+}
+
+#veille .portfolio-item .portfolio-caption .portfolio-caption-heading {
+	font-size: 1.5rem;
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+#veille .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+	font-style: italic;
+	font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+
 /* CARTES CONTENU DANS LE DOSSIER DE VEILLE */
 
 .container_carte_veille {
@@ -1451,7 +1524,7 @@ header.masthead {
 	padding: 20px;
 	text-align: center;
 	background: #fff;
-	color: #ffc800;
+	color: #3e2eca;
 }
 
 .container_carte_veille .carte .couverture.couverture1 h2 {
@@ -1470,19 +1543,19 @@ header.masthead {
 	padding: 5px 10px;
 	margin-top: 20px;
 	text-decoration: none;
-	color: #ffc800;
-	border: 2px solid #ffc800;
+	color: #3e2eca;
+	border: 2px solid #3e2eca;
 	transition: 0.3s;
 	font-family: 'Baloo Chettan 2';
 }
 
 .container_carte_veille .carte .couverture.couverture1 button:hover {
 	color: #fff;
-	background: #ffc800;
+	background: #3e2eca;
 }
 
 .container_carte_veille .carte .couverture.couverture2 {
-	background: #ffc800;
+	background: #3e2eca;
 	transition: 0.3s;
 	border-radius: 20px;
 }
@@ -1495,7 +1568,7 @@ header.masthead {
 	left: 50%;
 	transform: translateX(-50%);
 	background: transparent;
-	border: 2px solid #ffc800;
+	border: 2px solid #3e2eca;
 }
 
 .container_carte_veille .carte .couverture.couverture2 h2 {
@@ -1507,7 +1580,7 @@ header.masthead {
 }
 
 .container_carte_veille .carte:hover .couverture.couverture2 h2 {
-	color: #ffc800;
+	color: #3e2eca;
 	font-size: 1em;
 }
 
@@ -1515,8 +1588,8 @@ header.masthead {
 /*===== Colores =====*/
 
 :root {
-	--first-color: #ffc800;
-	--second-color: #ffc800;
+	--first-color: #3e2eca;
+	--second-color: #3e2eca;
 }
 
 @media screen and (min-width: 768px) {
@@ -1734,7 +1807,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .progress-bar {
 	height: 9px;
-	background: #ffc800;
+	background: #3e2eca;
 	width: 0%;
 	border-radius: 30px;
 }
