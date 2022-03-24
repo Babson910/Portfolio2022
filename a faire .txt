@@ -1,0 +1,4 @@
+1- illustrer ce que j'ai fais au stage avec des capture
+2- mes competences
+3- lien vers les documents pour veille 
+4- modifier gsb3(mariadb pour outils et langage php) et rajouter d'autre image pour projet
